@@ -1,0 +1,8 @@
+body{
+    margin: 5%; 
+    background-color: rgb(155, 93, 255);
+} 
+p, label{
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
