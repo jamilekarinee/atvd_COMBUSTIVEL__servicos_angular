@@ -1,4 +1,4 @@
 <div *ngIf="servico_de_combustivel.obter_resultado()">
     <p>Resultado = {{servico_de_combustivel.obter_resultado() | number:'1.2-2'}}</p>
-    <p>{{servico_de_combustivel.obter_resposta()}}</p>
+    <p [ngClass]='obterClasse()'>{{servico_de_combustivel.obter_resposta()}}</p>
 </div> 

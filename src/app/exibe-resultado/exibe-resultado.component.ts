@@ -7,8 +7,17 @@ import { CombustivelService } from '../combustivel.service';
   styleUrl: './exibe-resultado.component.css'
 })
 export class ExibeResultadoComponent {
-  constructor(public servico_de_combustivel: CombustivelService){
-    
+  constructor(public servico_de_combustivel: CombustivelService){}
+  obterClasse(){
+    let res = this.servico_de_combustivel.obter_resultado(); 
+    if(res){
+      if(res<=70){
+        return 'alcool'
+      }
+      else{
+        return 'gas'
+      }
+    }
+    return ''
   }
-
 }
